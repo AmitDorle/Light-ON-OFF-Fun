@@ -2,14 +2,23 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-image: url('./img/light-bulb-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 1545px 850px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
     <script>
         function on() {
-            document.getElementById("bulb").src = "bulb-on.png";
+            document.getElementById("bulb").src = "./img/bulb-on.png";
         }
 
         function off() {
-            document.getElementById("bulb").src = "bulb-off.jpg";
+            document.getElementById("bulb").src = "./img/bulb-off.jpg";
         }
     </script>
 
@@ -19,7 +28,7 @@
     <div class="main-container">
         <div class="container">
 
-            <img src="bulb-off.jpg" id="bulb" class="img" />
+            <img src="./img/bulb-off.jpg" id="bulb" class="img" />
             <div class="btn-container">
                 <button onClick="on();" class="btn">ON</button>
                 <button onClick="off();" class="btn">OFF</button>

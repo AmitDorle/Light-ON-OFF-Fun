@@ -4,13 +4,14 @@
 <head>
     <style>
         body {
-            display: flex;
-            justify-content: center;
             background-image: url('./img/light-bulb-bg.jpg');
             background-repeat: no-repeat;
             background-size: 1545px 850px;
         }
-
+        .main-main-container{
+            display: flex;
+            justify-content: center;
+        }
         .main-container {
             height: 700px;
             width: 700px;
@@ -34,20 +35,20 @@
 
 <body>
     <div class="head">
-        <h1>
-             LIGHT_ON-OFF_FUN!!
-        </h1>
+        <h1>LIGHT_ON-OFF_FUN</h1>
     </div>
+    <div class="main-main-container">
     <div class="main-container">
         <div class="container">
 
-            <img src="./img/bulb-off.png" id="bulb" class="img" />
+            <img src="./img/bulb-on.png" id="bulb" class="img" />
             <div class="btn-container">
                 <button onClick="on();" class="btn">ON</button>
                 <button onClick="off();" class="btn">OFF</button>
             </div>
         </div>
     </div>
+</div>
 
 </body>
 

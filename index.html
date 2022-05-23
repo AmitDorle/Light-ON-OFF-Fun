@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function on() {
+            document.getElementById("bulb").src = "bulb-on.png";
+        }
+
+        function off() {
+            document.getElementById("bulb").src = "bulb-off.jpg";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+
+            <img src="bulb-off.jpg" id="bulb" class="img" />
+            <div class="btn-container">
+                <button onClick="on();" class="btn">ON</button>
+                <button onClick="off();" class="btn">OFF</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

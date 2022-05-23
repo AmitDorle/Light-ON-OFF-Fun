@@ -10,6 +10,14 @@
             background-repeat: no-repeat;
             background-size: 1545px 850px;
         }
+
+        .main-container {
+            height: 700px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+        }
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <script>
@@ -18,17 +26,22 @@
         }
 
         function off() {
-            document.getElementById("bulb").src = "./img/bulb-off.jpg";
+            document.getElementById("bulb").src = "./img/bulb-off.png";
         }
     </script>
 
 </head>
 
 <body>
+    <div class="head">
+        <h1>
+             LIGHT_ON-OFF_FUN!!
+        </h1>
+    </div>
     <div class="main-container">
         <div class="container">
 
-            <img src="./img/bulb-off.jpg" id="bulb" class="img" />
+            <img src="./img/bulb-off.png" id="bulb" class="img" />
             <div class="btn-container">
                 <button onClick="on();" class="btn">ON</button>
                 <button onClick="off();" class="btn">OFF</button>

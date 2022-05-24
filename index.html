@@ -3,7 +3,7 @@
 
 <head>
     <style>
-        body {
+        .parent{
             background-image: url('./img/light-bulb-bg.jpg');
             background-repeat: no-repeat;
             background-size: 1545px 850px;
@@ -19,6 +19,15 @@
             justify-content: center;
             border-radius: 50%;
         }
+        .dark{
+            
+        }
+        .light{
+            background-image: url('./img/light-bulb-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 1545px 850px;
+        }
+
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <script>
@@ -29,11 +38,17 @@
         function off() {
             document.getElementById("bulb").src = "./img/bulb-off.png";
         }
+        function dark(){
+            document.getElementById("bulb").className="img dark"
+        }
+        function light(){
+            document.getElementById("light-dark").className="light"
+        }
     </script>
 
 </head>
 
-<body>
+<body class="parent" id="light-dark">
     <div class="head">
         <h1>LIGHT_ON-OFF_FUN</h1>
     </div>
@@ -43,8 +58,8 @@
 
             <img src="./img/bulb-on.png" id="bulb" class="img" />
             <div class="btn-container">
-                <button onClick="on();" class="btn">ON</button>
-                <button onClick="off();" class="btn">OFF</button>
+                <button onClick="on(),light()" class="btn">ON</button>
+                <button onClick="off(),dark()" class="btn">OFF</button>
             </div>
         </div>
     </div>
